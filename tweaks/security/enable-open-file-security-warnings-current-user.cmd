@@ -1,0 +1,1 @@
+reg delete "HKCU\Environment" /v SEE_MASK_NOZONECHECKS /f

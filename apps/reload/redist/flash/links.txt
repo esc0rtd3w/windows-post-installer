@@ -1,0 +1,4 @@
+https://www.adobe.com/products/flashplayer/distribution3.html
+
+http://download.macromedia.com/get/flashplayer/current/licensing/win/install_flash_player_$versionNumber_active_x.exe
+http://download.macromedia.com/get/flashplayer/current/licensing/win/install_flash_player_$versionNumber_plugin.exe

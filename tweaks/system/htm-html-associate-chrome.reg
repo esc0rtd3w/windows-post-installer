@@ -1,0 +1,22 @@
+Windows Registry Editor Version 5.00
+
+
+; 2 Below HTM/HTML tweaks disable the "ask about default" browser from IE
+; HTM File Default Chrome
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.htm]
+"PerceivedType"="text"
+@="htmlfile"
+"Content Type"="text/html"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.htm\OpenWithProgids]
+"ChromeHTML"=""
+
+
+; HTML File Default Chrome
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.html]
+"PerceivedType"="text"
+@="htmlfile"
+"Content Type"="text/html"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.html\OpenWithProgids]
+"ChromeHTML"=""

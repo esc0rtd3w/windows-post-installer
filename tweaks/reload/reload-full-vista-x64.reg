@@ -1,0 +1,142 @@
+Windows Registry Editor Version 5.00
+
+
+; Set Chrome as default
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\ftp\UserChoice]
+"Progid"="ChromeHTML"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\http]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\http\UserChoice]
+"Progid"="ChromeHTML"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https\UserChoice]
+"Progid"="ChromeHTML"
+
+
+
+;Show small icons in control panel
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel]
+"AllItemsIconView"=dword:00000001
+"StartupPage"=dword:00000001
+
+
+;Disable IE9 Welcome Screen
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Internet Explorer\Main]
+"DisableFirstRunCustomize"=dword:00000001
+
+
+;2 Below HTM/HTML tweaks disable the "ask about default" browser from IE
+;HTM File Default Chrome
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.htm]
+;"PerceivedType"="text"
+;@="htmlfile"
+;"Content Type"="text/html"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.htm\OpenWithProgids]
+"ChromeHTML"=""
+
+
+;HTML File Default Chrome
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.html]
+;"PerceivedType"="text"
+;@="htmlfile"
+;"Content Type"="text/html"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.html\OpenWithProgids]
+"ChromeHTML"=""
+
+
+; Set google as default Internet Explorer
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"Start Page"="https://www.google.com/"
+;"Search Page"="https://www.google.com/search?hl=en&source=hp&q="
+;"Search Bar"="http://www.google.com/ie"
+
+;[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchURL]
+;""="http://www.google.com/keyword/%s"
+
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Search]
+;"SearchAssistant"="http://www.google.com/ie"
+
+;[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes]
+;"DefaultScope"="{EFA27348-E879-4907-9783-B1D0956D3E33}"
+;"DownloadUpdates"=dword:00000001
+;"Version"=dword:00000002
+;"UpgradeTime"=hex:76,90,81,88,12,56,ca,01
+
+;[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes\{EFA27348-E879-4907-9783-B1D0956D3E33}]
+;"DisplayName"="Google.com"
+;“URL”=”http://www.google.com.au/search?q={searchTerms}&sourceid=ie7&rls=com.microsoft:{language}:{referrer:source}&ie={inputEncoding?}&oe={outputEncoding?}”
+;"Codepage"=dword:0000fde9
+;"OSDFileURL"="http://www.microsoft.com/windows/ie/searchguide/spbuilder.mspx?Encoding=UTF-8&Name=Google.com&URI=http%3A%2F%2 Fwww.google.com%2Fsearch%3Fhl%3Den%26source%3Dhp%26q%3DTEST%26aq%3Df%26oq%3D%26aqi%3Dg10"
+;"FaviconURL"="http://www.google.com/favicon.ico"
+;"FaviconPath"="http://www.google.com/favicon.ico"
+;"SortIndex"=dword:00000001 
+
+
+
+; Disable IE Autocomplete
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\AutoComplete]
+"Append Completion"="no"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\AutoComplete]
+"Append Completion"=-
+
+
+
+; Setup start menu and explorer options
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_SearchFiles"=dword:00000002
+"ServerAdminUI"=dword:00000000
+"Hidden"=dword:00000001
+"ShowCompColor"=dword:00000001
+"HideFileExt"=dword:00000000
+"DontPrettyPath"=dword:00000000
+"ShowInfoTip"=dword:00000001
+"HideIcons"=dword:00000000
+"MapNetDrvBtn"=dword:00000000
+"WebView"=dword:00000001
+"Filter"=dword:00000000
+"SuperHidden"=dword:00000000
+"SeparateProcess"=dword:00000000
+"AutoCheckSelect"=dword:00000000
+"IconsOnly"=dword:00000000
+"ShowTypeOverlay"=dword:00000001
+"ListviewAlphaSelect"=dword:00000001
+"ListviewShadow"=dword:00000001
+"TaskbarAnimations"=dword:00000001
+"StartMenuInit"=dword:00000004
+"Start_ShowMyGames"=dword:00000000
+"AlwaysShowMenus"=dword:00000001
+"Start_ShowSetProgramAccessAndDefaults"=dword:00000000
+"Start_MinMFU"=dword:0000000a
+"Start_JumpListItems"=dword:0000000a
+"Start_AdminToolsRoot"=dword:00000000
+"StartMenuAdminTools"=dword:00000000
+"Start_ShowDownloads"=dword:00000001
+"Start_ShowHelp"=dword:00000000
+"Start_ShowNetPlaces"=dword:00000001
+"Start_ShowRun"=dword:00000001
+"Start_ShowVideos"=dword:00000001
+"Start_PowerButtonAction"=dword:00000002
+"Start_ShowMyDocs"=dword:00000001
+"StartMenuFavorites"=dword:00000000
+"Start_AdminToolsTemp"=dword:00000000
+"NoNetCrawling"=dword:00000001
+
+
+
+; Bypass Windows Media Player setup screen
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences]
+"AcceptedPrivacyStatement"=dword:00000001
+
+
+
+; Bypass 1st connection to wifi dialog (may not work)
+[HKEY_CURRENT_USER\System\CurrentControlSet\Control\Network\NetworkLocationWizard]
+"ShowCount"=dword:00000001
+
+

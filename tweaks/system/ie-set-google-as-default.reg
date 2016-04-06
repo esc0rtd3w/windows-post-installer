@@ -1,0 +1,30 @@
+Windows Registry Editor Version 5.OO
+
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"Start Page"="https://www.google.com/"
+"Search Page"="https://www.google.com/search?hl=en&source=hp&q="
+"Search Bar"="http://www.google.com/ie"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchURL]
+""="http://www.google.com/keyword/%s"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Search]
+"SearchAssistant"="http://www.google.com/ie"
+
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes]
+"DefaultScope"="{EFA27348-E879-4907-9783-B1D0956D3E33}"
+"DownloadUpdates"=dword:00000001
+"Version"=dword:00000002
+"UpgradeTime"=hex:76,90,81,88,12,56,ca,01
+
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes\{EFA27348-E879-4907-9783-B1D0956D3E33}]
+"DisplayName"="Google.com"
+“URL”=”http://www.google.com.au/search?q={searchTerms}&sourceid=ie7&rls=com.microsoft:{language}:{referrer:source}&ie={inputEncoding?}&oe={outputEncoding?}”
+"Codepage"=dword:0000fde9
+"OSDFileURL"="http://www.microsoft.com/windows/ie/searchguide/spbuilder.mspx?Encoding=UTF-8&Name=Google.com&URI=http%3A%2F%2 Fwww.google.com%2Fsearch%3Fhl%3Den%26source%3Dhp%26q%3DTEST%26aq%3Df%26oq%3D%26aqi%3Dg10"
+"FaviconURL"="http://www.google.com/favicon.ico"
+"FaviconPath"="http://www.google.com/favicon.ico"
+"SortIndex"=dword:00000001 

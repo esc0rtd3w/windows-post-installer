@@ -1,0 +1,1 @@
+bcdedit /import c:\savedbcd

@@ -1,0 +1,7 @@
+x86
+
+http://go.microsoft.com/fwlink/?LinkID=87342
+
+http://definitionupdates.microsoft.com/download/DefinitionUpdates/VersionedSignatures/AM/1.165.3312.0/x86/mpam-fe.exe
+
+

@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+;Disable IE9 Welcome Screen
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Internet Explorer\Main]
+"DisableFirstRunCustomize"=dword:00000001

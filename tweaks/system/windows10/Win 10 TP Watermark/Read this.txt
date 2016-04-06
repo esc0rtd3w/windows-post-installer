@@ -1,0 +1,32 @@
+ 
+  Uploaded on 
+
+       --------------------------
+    
+        www.windowsbleu.com
+
+-----------------------------------------------
+
+   Instaraction
+
+1-Install_Take_Ownership.reg. This will add the contents of the file to the registry.
+
+3-Right Click on:
+
+           basebrd.dll.mui from C:\Windows\Branding\Basebrd\en-US
+           shell32.dll.mui from C:\Windows\System32\en-US
+
+
+   and Click on Take Ownership.
+
+4- Restart your computer
+
+
+5-  Replace C:\Windows\Branding\Basebrd\en-US\basebrd.dll.mui with edited basebrd.dll.mui
+    Replace C:\Windows\System32\en-US\shell32.dll.mui with edited shell32.dll.mui
+
+6- Open Command Prompt as Admin and use this cmd: "Mcbuilder" and wait few seconds.
+
+7 Restart your computer.
+
+
